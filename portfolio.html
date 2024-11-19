@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <style>
+        header, footer{
+            background-color: rgb(27, 37, 57);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src="IMG/portfolio.png" alt="Minha Foto" class="logo"></a>
+        <h1>Meu Portfólio</h1>
+        <nav>
+            <ul>
+                <li><a href="menu.html">Voltar ao Menu</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Galeria de Projetos -->
+        <section id="portfolio">
+            <div class="portfolio-item" data-desc="desc1">
+                <img src="IMG/projeto_1.png" alt="Projeto 1" style="height: 200px; width: 200px;">
+                <p>Projeto 1</p>
+            </div>
+            <div class="portfolio-item" data-desc="desc2">
+                <img src="IMG/projeto_2.1.png" alt="Projeto 2" style="height: 200px; width: 200px;">
+                <p>Projeto 2</p>
+            </div>
+            <div class="portfolio-item" data-desc="desc3">
+                <img src="IMG/projeto_3.11.jpg" alt="Projeto 3" style="height: 200px; width: 200px;">
+                <p>Projeto 3</p>
+            </div>
+            <div class="portfolio-item" data-desc="desc4">
+                <img src="IMG/videos.jpg" alt="Projeto 4" style="height: 200px; width: 200px;">
+                <p>Projeto 4</p>
+            </div>
+        </section>
+
+        <!-- Tela de Descrição -->
+        <section id="project-description" class="hidden">
+            <button id="back-btn">Voltar</button>
+
+            <!-- Descrição do Projeto 1 -->
+            <div id="desc1" class="desc-content">
+                <h2>Projeto 1 - Criação de Conteúdo</h2>
+                <p style="text-align: center;">Este projeto consistiu na criação de conteúdo personalizado para
+                    diferentes tipos de empreendedores. O objetivo foi entender as necessidades de cada segmento e
+                    <br>desenvolver postagens adaptadas ao seu público-alvo, utilizando estratégias de marketing digital
+                    e produção de conteúdo relevante.</p>
+                <p style="text-align: center;"><strong>Objetivo:</strong> Ajudar pequenos negócios e empreendedores a se
+                    destacarem nas redes sociais com conteúdos autênticos e direcionados.</p>
+                <div class="project-gallery">
+                    <img src="IMG/projeto_1.png" alt="Imagem 1 do Projeto" class="gallery-img">
+                    <img src="IMG/projeto_12.png" alt="Imagem 2 do Projeto" class="gallery-img">
+                    <img src="IMG/projeto_13.png" alt="Imagem 3 do Projeto" class="gallery-img">
+                </div>
+            </div>
+
+            <!-- Descrição do Projeto 2 -->
+            <div id="desc2" class="desc-content">
+                <h2>Projeto 2 - Desenvolvimento de Site Responsivo</h2>
+                <p style="text-align: center;">O Projeto 2 focou na criação de um site responsivo para uma pequena
+                    empresa, com o objetivo de melhorar sua presença online. O site foi desenvolvido utilizando as
+                    melhores práticas de design e usabilidade, garantindo uma navegação fluida em dispositivos móveis e
+                    desktop.</p>
+                <p style="text-align: center;"><strong>Objetivo:</strong> Proporcionar uma experiência de usuário
+                    consistente em todos os dispositivos, melhorando a conversão e o engajamento do público.</p>
+                <div class="project-gallery">
+                    <img src="IMG/projeto_2.1.png" alt="Imagem 1 do Projeto" class="gallery-img"
+                        style="height: 200px; width: 200px;">
+                    <img src="IMG/projeto_2.2.png" alt="Imagem 2 do Projeto" class="gallery-img"
+                        style="height: 200px; width: 200px;">
+                    <img src="IMG/projeto_2.23png.png" alt="Imagem 3 do Projeto" class="gallery-img"
+                        style="height: 200px; width: 200px;">
+
+                </div>
+            </div>
+
+            <!-- Descrição do Projeto 3 -->
+            <div id="desc3" class="desc-content">
+                <h2>Projeto 3 - Campanha de Mídias Pagas</h2>
+                <p style="text-align: center;">Para o Projeto 3, criamos uma campanha de anúncios pagos para um cliente
+                    no Facebook e Instagram. A campanha foi segmentada com base em dados demográficos e comportamentais
+                    para alcançar um público específico e aumentar as vendas.</p>
+                <p style="text-align: center;"><strong>Objetivo:</strong> Aumentar as conversões e a visibilidade do
+                    cliente nas plataformas digitais, otimizando os investimentos em mídia paga.</p>
+                <div class="project-gallery">
+                    <img src="IMG/projeto_3.1.jpg" alt="Imagem 1 do Projeto" class="gallery-img"
+                        style="height: 200px; width: 200px;">
+                    <img src="IMG/projeto_3.2.jpg" alt="Imagem 2 do Projeto" class="gallery-img"
+                        style="height: 200px; width: 200px;">
+                    <img src="IMG/projeto_3.3.jpg" alt="Imagem 3 do Projeto" class="gallery-img"
+                        style="height: 200px; width: 200px;">
+                </div>
+            </div>
+
+            <div id="desc4" class="desc-content">
+                <h2>Projeto 4 - VideoMaker</h2>
+                <p style="text-align: center;">O Projeto 4 é um espaço de criação de conteúdo visual, onde desenvolvo
+                    vídeos personalizados para redes sociais. Ofereço serviços de criação, gravação e edição para
+                    eventos, publicidade, documentários e conteúdo digital, utilizando software de edição avançado,
+                    equipamentos de alta qualidade e criatividade para entregar resultados impactantes.</p>
+                <p style="text-align: center;"><strong>Serviços</strong> <br>
+                    1. Gravação de eventos: Registro de casamentos, festas, conferências e outros eventos importantes.
+                    <br>
+                    2. Edição de vídeos: Criação de vídeos editados a partir de gravações próprias ou recebidas. <br>
+                    3. Pós-produção: Adição de efeitos, transições, áudio e legendas para realçar a narrativa. <br>
+                    4. Criação de conteúdo: Desenvolvimento de vídeos institucionais, publicitários e de divulgação.
+                    <br></p>
+                <div class="project-gallery">
+                    <video src="mp4/video_01.mp4" class="gallery-video" controls
+                        style="height: 200px; width: 200px;"></video>
+                    <video src="mp4/video_02.mp4" class="gallery-video" controls
+                        style="height: 200px; width: 200px;"></video>
+                    <video src="mp4/video_03.mp4" class="gallery-video" controls
+                        style="height: 200px; width: 200px;"></video>
+                    <video src="mp4/video_04.mp4" class="gallery-video" controls
+                        style="height: 200px; width: 200px;"></video>
+                    <video src="mp4/video_05.mp4" class="gallery-video" controls
+                        style="height: 200px; width: 200px;"></video>
+                    <video src="mp4/video_06.mp4" class="gallery-video" controls
+                        style="height: 200px; width: 200px;"></video>
+                </div>
+
+            </div>
+
+            <div id="lightbox" class="hidden">
+                <span id="close-lightbox">&times;</span>
+                <img id="lightbox-img" src="" alt="Imagem em Tela Cheia">
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Daniel Henrique</p>
+    </footer>
+
+    <script>
+        console.log("Script carregado!");
+        document.addEventListener("DOMContentLoaded", () => {
+            console.log("DOM totalmente carregado!");
+            // Resto do código...
+        });
+
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const portfolioItems = document.querySelectorAll(".portfolio-item");
+            const descriptionSection = document.getElementById("project-description");
+            const backBtn = document.getElementById("back-btn");
+            const descContents = document.querySelectorAll(".desc-content");
+
+            // Evento para cada item do portfólio
+            portfolioItems.forEach(item => {
+                item.addEventListener("click", () => {
+                    const descId = item.getAttribute("data-desc");
+                    descContents.forEach(content => (content.style.display = "none")); // Oculta todas as descrições
+                    const selectedDesc = document.getElementById(descId);
+                    if (selectedDesc) {
+                        selectedDesc.style.display = "block"; // Mostra a descrição selecionada
+                        descriptionSection.classList.remove("hidden"); // Exibe a seção de descrição
+                    }
+                });
+            });
+
+            // Evento para o botão de voltar
+            backBtn.addEventListener("click", () => {
+                descriptionSection.classList.add("hidden"); // Oculta a seção de descrição
+            });
+        });
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const galleryImages = document.querySelectorAll(".gallery-img"); // Seleciona as imagens das descrições
+            const lightbox = document.getElementById("lightbox");
+            const lightboxImg = document.getElementById("lightbox-img");
+            const closeLightbox = document.getElementById("close-lightbox");
+
+            // Abre o lightbox ao clicar na imagem
+            galleryImages.forEach(img => {
+                img.addEventListener("click", () => {
+                    lightboxImg.src = img.src; // Define a imagem no lightbox
+                    lightbox.classList.remove("hidden"); // Mostra o lightbox
+                });
+            });
+
+            // Fecha o lightbox ao clicar no botão de fechar
+            closeLightbox.addEventListener("click", () => {
+                lightbox.classList.add("hidden");
+            });
+
+            // Fecha o lightbox ao clicar fora da imagem
+            lightbox.addEventListener("click", (e) => {
+                if (e.target === lightbox) {
+                    lightbox.classList.add("hidden");
+                }
+            });
+        });
+
+    </script>
+
+</body>
+
+</html>
